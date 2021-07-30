@@ -1,19 +1,18 @@
-var balloon,bg;
 
-function preload(){
-    bg= loadImage("bg.png");
-    balloon=loadImage("Balloon.png");
-}
+
+
+
 
 function setup(){
     createCanvas(500,500);
     ball = createSprite(250,250,10,10);
     ball.shapeColor = "red";
-    ball.addImage(balloon);
+   
+    
 }
 
 function draw(){
-    background(bg);
+    background("pink");
     if(keyDown(LEFT_ARROW)){
         changePosition(-1,0);
     }
